@@ -1,11 +1,10 @@
 
-![Logo](./src/assets/logo.png){width=50px}
+![Logo](./src/assets/logo.svg){width=50px}
 
 
 # Rock, Paper, Scissors Game 🐶
 
 This is a classic game where you can challenge the computer to a thrilling match of skill and strategy. Choose between three options: Rock, Paper, or Scissors, and find out who will be the winner.
-
 
 
 
