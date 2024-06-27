@@ -1,5 +1,5 @@
 
-![Logo]('../assets/logo.png')
+![Logo](./src/assets/logo.png)
 
 
 # Rock, Paper, Scissors Game 🐶
