@@ -1,5 +1,5 @@
 
-![Logo](./src/assets/logo.svg){width=50px}
+![Logo](./src/assets/logo.svg){width=10px}
 
 
 # Rock, Paper, Scissors Game 🐶
