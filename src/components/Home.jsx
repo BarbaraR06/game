@@ -1,17 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import logo from "../assets/logo.svg";
-import Music from "./music";
 import star1 from "../assets/star1.svg";
 import star2 from "../assets/star2.svg";
-import api from "./api.jsx";
+import bubbleSound from "../assets/bubbleSound.mp3";
 
 const Home = () => {
-  
-  const apiKey = api.apiKey;
-
-  const videoUrl =
-    "https://www.youtube.com/watch?v=_dszbTfcFhk&ab_channel=LofiHammy";
+  const playHoverSound = () => {
+    const audio = new Audio(bubbleSound);
+    audio.play();
+  };
 
   return (
     <div className="flex justify-center items-center ">
@@ -40,18 +38,18 @@ const Home = () => {
       <div className="justify-center items-center flex flex-col">
         <img src={logo} className="w-64" alt="logo" />
         <button
-          className="button bg-[#F9466B]"
-          style={{ textDecoration: "none" }}>
+          className="button bg-[#F9466B] hover:scale-110 mt-1"
+          style={{ textDecoration: "none" }}
+          onMouseEnter={playHoverSound}>
           <Link
             to="/game"
             style={{ textDecoration: "none" }}
-            className="text-[#FAF2E8] ">
+            className="text-[#FAF2E8]">
             START
           </Link>
         </button>
         <h3 className="mt-8">Made with 💗 by Barbie</h3>
       </div>
-      <Music apiKey={apiKey} videoUrl={videoUrl} />
     </div>
   );
 };

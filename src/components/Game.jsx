@@ -4,10 +4,8 @@ import piedra from "../assets/piedra.svg";
 import papel from "../assets/papel.svg";
 import tijera from "../assets/tijera.svg";
 import Navbar from "./navbar";
-import Music from "./music";
 import bubbleSound from "../assets/bubbleSound.mp3";
 import reset from "../assets/reset.svg";
-import api from "./api.jsx";
 
 const Game = () => {
   const [playerChoice, setPlayerChoice] = useState(null);
@@ -19,10 +17,6 @@ const Game = () => {
   //para las predicciones
   const [lastPlayerChoice, setLastPlayerChoice] = useState(null);
 
-  const apiKey = api.apiKey;
-
-  const videoUrl =
-    "https://www.youtube.com/watch?v=_dszbTfcFhk&ab_channel=LofiHammy";
 
   const choices = [
     { label: "Rock", image: piedra },
@@ -93,7 +87,6 @@ const Game = () => {
 
   return (
     <div className="text-center">
-      <Music apiKey={apiKey} videoUrl={videoUrl} />
       <Navbar playerScore={playerScore} computerScore={computerScore} />
       {result && (
         <div className="-mb-20 mt-32 text-gray-700">

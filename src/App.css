@@ -10,15 +10,6 @@
 }
 
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 @font-face {
   font-family: "Bubblegum";
   src: url('./fonts/Bubblegum.ttf') format('truetype');
@@ -28,16 +19,3 @@ body{
   font-family: "Bubblegum", sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
