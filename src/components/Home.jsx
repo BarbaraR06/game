@@ -14,7 +14,7 @@ const Home = () => {
     "https://www.youtube.com/watch?v=_dszbTfcFhk&ab_channel=LofiHammy";
 
   return (
-    <div className="w-screen h-screen flex justify-center items-center">
+    <div className="flex justify-center items-center ">
       <div className="inline-flex">
         <img
           src={star1}
@@ -38,7 +38,7 @@ const Home = () => {
         />
       </div>
       <div className="justify-center items-center flex flex-col">
-        <img src={logo} className="w-64 mb-10" alt="logo" />
+        <img src={logo} className="w-64" alt="logo" />
         <button
           className="button bg-[#F9466B]"
           style={{ textDecoration: "none" }}>
